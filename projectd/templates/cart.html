@@ -1,0 +1,43 @@
+{%extends "base.html"%}
+{%block style%}
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		<link rel="stylesheet" href={{url_for('static', filename='css/signup.css') }} />
+		
+
+<link rel="stylesheet" href={{url_for('static', filename='css/cart.css')}} />
+<link rel="stylesheet" href={{url_for('static', filename='css/topStyle.css') }} />
+
+		{%endblock%}
+{%block body%}
+<div id="cartItems">
+	<h2>Shopping Cart</h2>
+	<div id="tableItems">
+		{% for row in products %}
+		<div>
+			<hr id="seperator">
+			<div id="itemImage">
+				<img src="{{row['img']}}" height="100px;">
+			</div>
+			<div>
+				Qty:{{row['qty']}}
+			</div>
+			<div id="itemName">
+				<span id="itemNameTag">Product Name:{{row['description']}}</span><br>
+				In stock<br>
+
+				<a href="/removeFromCart?productId={{row['id']}}" class="btn btn-info" role="button">Remove</a>
+			</div>
+
+			<div id="itemPrice">
+				Rs{{row['cost']}}
+			</div>
+		</div>
+		{% endfor %}
+		<hr id="seperator">
+		<div id="total">
+			<span id="subtotal">Subtotal</span> : Rs{{totalPrice}}
+		</div>
+	</div>
+</div>
+<a href="/checkout?totalCost={{totalPrice}}">Proceed to checkout</a>
+{%endblock%}

@@ -1,0 +1,39 @@
+{%extends "base.html"%}
+{%block body%}
+<div class="container" style="background-color: transparent;">
+	{%for c in p%}
+                <div class="row" style="margin-top:20px;">
+                    
+                    
+                    <div class="col-md-4" >
+                        <div class="card" align="center">
+  <img class="card-img-top" src="{{c.img}}" alt="Card image cap">
+</div>
+</div>
+
+  <div class="col-md-4" >
+  <div class="card-body">
+    <h5 class="card-title">Stock : {{c.type}}</h5>
+    <p class="card-text">Price : {{c.cost}}<br>
+
+    	{{c.stock}}<br>
+    	Size : {{c.size}}<br>
+    	Description : <p>{{c.description}}</p><br>
+    	School  :  {{q}}
+
+    {{c.descrption}}</p>
+    <a href="/cart/{{c.id}}" class="btn  s">Add to cart</a>
+    
+  </div>
+</div>
+                    </div>
+                    
+                </div>
+                {%endfor%}
+            </div>
+
+
+
+
+
+{%endblock%}

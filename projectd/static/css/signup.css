@@ -1,0 +1,148 @@
+body {
+  
+  padding-bottom: 40px;
+}
+ 
+.form-signin {
+  max-width: 330px;
+  padding: 15px;
+  margin: 0 auto;
+}
+.form-signin .form-signin-heading,
+.form-signin .checkbox {
+  margin-bottom: 10px;
+}
+.form-signin .checkbox {
+  font-weight: normal;
+}
+.form-signin .form-control {
+  position: relative;
+  height: auto;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  font-size: 16px;
+}
+.form-signin .form-control:focus {
+  z-index: 2;
+}
+.form-signin input[type="email"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.form-signin input
+{
+  background-color: transparent;
+    color: #000000;
+    outline: none;
+    outline-style: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    padding: 3px 10px;
+  border-radius: 0px;
+
+  margin: 10px;
+  width: 200px;
+  height: 20px;
+}
+
+
+input:hover{
+  border-bottom:solid #000000 1px;
+}
+
+
+input[type="Submit"][value="Sign In"]
+{
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #006dcc;
+  *background-color: #0044cc;
+  background-image: -moz-linear-gradient(top, #0088cc, #0044cc);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#0044cc));
+  background-image: -webkit-linear-gradient(top, #0088cc, #0044cc);
+  background-image: -o-linear-gradient(top, #0088cc, #0044cc);
+  background-image: linear-gradient(to bottom, #0088cc, #0044cc);
+  background-repeat: repeat-x;
+  border-color: #0044cc #0044cc #002a80;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0088cc', endColorstr='#ff0044cc', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+
+
+
+  border-radius: 10px;
+  
+  color: white;
+  width: 150px;
+  height: 50px;
+}
+
+input[type="Submit"][value="Sign In"]:hover {
+    background-color:#20B2AA; /* Green */
+    color: white;
+}
+
+
+
+input[type="Submit"][value="Sign In"]:focus{
+outline: none;
+box-shadow: 0px 0px 5px #61C5FA;
+border:1px solid #5AB0DB;
+}
+
+
+
+  
+  
+.nv{
+  margin-bottom: 30px;
+}
+.nv li{
+  display: inline;
+}
+.nv  li a{
+
+  color:  white;
+  margin-up:0px;
+  margin-bottom: 20px;
+    padding: 14px 16px;
+    font-size: 20px;
+    display: inline;
+    font-weight: 500;
+}
+
+ 
+ form
+ {
+  background-color: transparent;
+    color: #000000;
+    outline: none;
+    outline-style: none;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    padding: 3px 10px;
+  border-radius: 0px;
+
+  margin: 10px;
+  width: 200px;
+  height: 40px;
+ }
+
+ .s
+ {
+  background-color: #ff8d43;
+  color:black;
+ }

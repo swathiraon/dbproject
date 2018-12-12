@@ -1,0 +1,21 @@
+{%extends "base.html"%}
+{%block body%}
+<div class="container" style=  "background:linear-gradient(to right, #fffff0 ,#fffff0);">
+                <div class="row" style="margin-top:20px;">
+                    
+                    {%for c in posts%}
+                    <div class="col-md-4"    style="  background:linear-gradient(to right, #fffff0 ,#fffff0);margin-top:40px;margin-bottom:20px;">
+                        <div class="card" align="center"style="width:200px;height:300px;background-color: transparentborder;border:none;">
+  <img class="card-img-top" src="{{c.img}}" style="height:200px;width:150px;background-color: transparent;"alt="Card image cap">
+  <div class="card-body" style="background-color: transparent;" >
+    <h5 class="card-title" style="background-color: transparent;">{{c.type}}</h5>
+    <p class="card-text" style="background-color: transparent;">{{c.cost}}</p>
+    <a href="/product/{{c.id}}" class="btn btn-primary">BUY NOW</a>
+  </div>
+</div>
+                    </div>
+                    {%endfor%}
+                </div>
+            </div>
+
+{%endblock%}

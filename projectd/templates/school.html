@@ -1,0 +1,31 @@
+{%extends "base.html"%}
+{%block body%}
+
+
+<div class="card" style="width: 26rem;" align="center">
+  <div class="card-body" style="border-radius: 25px;
+	border-color: black;
+	margin: 10px;
+	width: 200px;
+	height: 200px;align:center;" align="center">
+<form action=""method="POST">
+
+<h5> Select school  :<select name="school_id" >
+					{%	for u in sch%}
+					<option value="{{u.id}}">{{u.name}}</option>
+					{%endfor%}
+				</select><br>
+<br> 
+
+	
+<input type="Submit" value="Submit">
+
+</h5>
+</form>
+</div>
+</div>
+
+
+
+
+{%endblock%}

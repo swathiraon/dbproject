@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+{%extends "base.html"%}
+ 
+  {%block body%}
+ 
+    <div class="card" style="width: 26rem;align:center;margin:10px auto;margin-top:65px;height:400px" align="center">
+      
+ 
+      <div class="card-body" >
+        
+        <form class="form-signin" action="/validateLogin" method="post">
+        <label for="inputEmail" class="sr-only">Email address</label>
+
+        <input type="email" name="inputEmail" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+        <label for="inputPassword" class="sr-only">Password</label>
+       <input type="password" name="inputPassword" id="inputPassword" class="form-control" placeholder="Password" required>
+         
+        <button id="btnSignIn1" class="btn btn-lg btn-primary btn-block" type="submit" style="margin-bottom:0px;width: 150px;
+  height: 50px;">Sign in</button>
+      </div>
+                                    <h2>OR</h2>
+
+                                    <br>
+      </form>
+
+        
+      
+      <a href="/signUp" class="btn btn-lg btn-primary btn-block" style="width: 150px;
+  height: 50px;margin-left:130px;margin-bottom:20px;"> Sign Up</a>
+      
+
+
+
+      </div>
+ 
+       
+ 
+      
+ 
+    </div>
+  {%endblock%}

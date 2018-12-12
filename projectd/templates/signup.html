@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+{%extends "base.html"%}
+ {%block body%}
+    <div class="container" style="align:center; padding:0px" align="center">
+      
+
+      <div class="jumbotron" style="width:400px;padding:0px" >
+          
+        <form class="form-signin" action="/signUp" method="POST" style="height:auto;width:300px;">
+        <label for="inputName" class="sr-only">First Name</label>
+        <input type="name" name="inputName" id="inputName" class="form-control" placeholder="Name" required autofocus><br>
+        <label for="inputlast" class="sr-only">Last Name</label>
+        <input type="name" name="inputlast" id="inputlast" class="form-control" placeholder="Last Name" required autofocus><br>
+        <label for="inputEmail" class="sr-only">Email address</label>
+        <input type="email" name="inputEmail" id="inputEmail" class="form-control" placeholder="Email address" required autofocus><br>
+        <label for="inputPassword" class="sr-only">Password</label>
+        <input type="password" name="inputPassword" id="inputPassword" class="form-control" placeholder="Password" required><br>
+        <label for="inputSchool" class="sr-only">School</label>
+        Select School:
+        <select name="school_id"  >
+                    {%  for u in sch%}
+                    <option value="{{u.id}}" >{{u.name}}</option>
+                    {%endfor%}
+                </select><br>
+        <label for="inputPhone" class="sr-only">Phone</label>
+        <input  name="inputPhone" id="inputPhone" class="form-control" placeholder="Phone" required>
+ 
+
+<br>
+
+         <label for="inputAddress" class="sr-only">Address</label>
+        <input type="text" name="inputAddress" id="inputAddress" class="form-control" placeholder="Address" required><br>
+
+
+
+        <button id="btnSignIn1" name="submit" class="btn btn-lg btn-primary btn-block" type="submit" style="margin-bottom:0px;">Sign up</button>
+        
+      </div>
+      </form>
+ 
+      
+ 
+    </div>
+    
+{%endblock%}
